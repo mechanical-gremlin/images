@@ -42,7 +42,7 @@ h1 {
 }
 
 .effect-1 {
-   filter:grayscale(100%);
+   filter:invert(100%);
 }
 
 .effect-2 {
