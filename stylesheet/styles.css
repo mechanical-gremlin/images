@@ -81,3 +81,13 @@ h1 {
    display: block;
    margin: 0;
 }
+
+  .gradient-box {
+    width: 300px;
+    height: 200px;
+    /* Gradient from light blue (top-left) to white (bottom-right) */
+    background: linear-gradient(to bottom right, #add8e6, #ffffff);
+    border-radius: 8px; /* Optional rounded corners */
+    /* Drop shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
