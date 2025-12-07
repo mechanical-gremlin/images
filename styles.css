@@ -42,11 +42,11 @@ h1 {
 }
 
 .effect-1 {
-   
+   filter:grayscale(100%)
 }
 
 .effect-2 {
-   
+   filter: hue-rotate(90deg);
 }
 
 .effect-3 {
