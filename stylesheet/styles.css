@@ -57,7 +57,7 @@ h1 {
 
 .effect-4 {
    filter:grayscale(100%);
-   border-image-source: url(/images/tic-tac-toe.png) 30 round;
+   border-image-source: url(../images/tic-tac-toe.png) 30 round;
    border: 30px solid #000;
 
 }
