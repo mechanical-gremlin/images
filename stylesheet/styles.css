@@ -56,7 +56,10 @@ h1 {
 }
 
 .effect-4 {
-   
+   filter:grayscale(100%);
+   border-image-source: url(/images/tic-tac-toe.png) 30 round;
+   border: 30px solid #000;
+
 }
 
 .gradient-container {
@@ -84,6 +87,6 @@ h1 {
     margin: 20px auto;
 }
 
-.border-frame .effect-6 {
+.border-frame .effect-4 {
    
 }
