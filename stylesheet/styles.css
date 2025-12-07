@@ -66,8 +66,9 @@ h1 {
 }
 
 .border {
-   display: inline-block;
+   display: block;
    border: 30px solid transparent;
-   border-image: url('../images/tic-tac-toe.png') 30 round;
+   border-image: url('../images/tic-tac-toe.png') 30 repeat;
+   width: fit-content;
    margin: 0 auto;
 }
