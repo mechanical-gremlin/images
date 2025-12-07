@@ -1,0 +1,280 @@
+/* Image Manipulation Stylesheet */
+
+/* Base image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Image containers */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image scaling and sizing */
+.image-scale-sm {
+  max-width: 300px;
+}
+
+.image-scale-md {
+  max-width: 600px;
+}
+
+.image-scale-lg {
+  max-width: 900px;
+}
+
+.image-scale-full {
+  width: 100%;
+  height: auto;
+}
+
+/* Image transformations */
+.image-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.image-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.image-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.image-flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.image-flip-vertical {
+  transform: scaleY(-1);
+}
+
+/* Image filters */
+.image-grayscale {
+  filter: grayscale(100%);
+}
+
+.image-sepia {
+  filter: sepia(100%);
+}
+
+.image-brightness-high {
+  filter: brightness(1.3);
+}
+
+.image-brightness-low {
+  filter: brightness(0.7);
+}
+
+.image-contrast-high {
+  filter: contrast(1.5);
+}
+
+.image-contrast-low {
+  filter: contrast(0.7);
+}
+
+.image-blur {
+  filter: blur(5px);
+}
+
+.image-saturate {
+  filter: saturate(2);
+}
+
+.image-desaturate {
+  filter: saturate(0.5);
+}
+
+.image-hue-shift {
+  filter: hue-rotate(90deg);
+}
+
+.image-invert {
+  filter: invert(100%);
+}
+
+/* Multiple filter combinations */
+.image-vintage {
+  filter: sepia(0.5) brightness(1.1) contrast(1.2);
+}
+
+.image-dark-mode {
+  filter: invert(1) brightness(0.9);
+}
+
+.image-enhanced {
+  filter: brightness(1.1) contrast(1.2) saturate(1.3);
+}
+
+/* Border and shadow effects */
+.image-border {
+  border: 2px solid #333;
+  padding: 8px;
+}
+
+.image-border-rounded {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-border-rounded-lg {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image-border-circle {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+.image-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-shadow-lg {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Opacity and transparency */
+.image-transparent-50 {
+  opacity: 0.5;
+}
+
+.image-transparent-75 {
+  opacity: 0.75;
+}
+
+.image-transparent-25 {
+  opacity: 0.25;
+}
+
+/* Hover effects */
+.image-hover-zoom:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.image-hover-opacity:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.image-hover-blur:hover {
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
+
+.image-hover-brighten:hover {
+  filter: brightness(1.2);
+  transition: filter 0.3s ease;
+}
+
+/* Aspect ratio containers */
+.aspect-ratio-1-1 {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.aspect-ratio-16-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.aspect-ratio-4-3 {
+  position: relative;
+  padding-bottom: 75%;
+}
+
+.aspect-ratio-3-2 {
+  position: relative;
+  padding-bottom: 66.67%;
+}
+
+.aspect-ratio-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive images */
+@media (max-width: 768px) {
+  .image-scale-lg {
+    max-width: 600px;
+  }
+
+  .image-border-circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-scale-md,
+  .image-scale-lg {
+    max-width: 300px;
+  }
+
+  .image-border-circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.image-animate-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.image-animate-slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+.image-animate-spin {
+  animation: spin 2s linear infinite;
+}
