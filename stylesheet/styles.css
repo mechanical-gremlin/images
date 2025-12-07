@@ -71,8 +71,8 @@ h1 {
 
 .border {
    display: block;
-   border: 25px solid transparent;
-   border-image: url('../images/tic-tac-toe.png') 25 round;
+   border: 15px solid transparent;
+   border-image: url('../images/tic-tac-toe.png') 15 round;
    width: fit-content;
    margin: 0 auto;
 }
