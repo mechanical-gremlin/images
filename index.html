@@ -3,192 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS3 Image Projects</title>
+    <title>CSS3 Image Effects Project</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            color: white;
-            margin-bottom: 50px;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        .project-image {
-            width: 100%;
-            height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3em;
-            overflow: hidden;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .football-field {
-            background: linear-gradient(135deg, #0d3b0d 0%, #1a5a1a 100%);
-            border-image: url('images/tic-tac-toe.png') 30 round;
-            border: 30px solid transparent;
-            padding: 20px;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .project-info {
-            padding: 20px;
-        }
-
-        .project-info h2 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 1.5em;
-        }
-
-        .project-info p {
-            color: #666;
-            font-size: 0.95em;
-            line-height: 1.6;
-            text-shadow: none;
-        }
-
-        footer {
-            text-align: center;
-            color: white;
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>CSS3 Image Projects</h1>
-            <p>Explore creative CSS3 image effects and transformations</p>
-        </header>
+        <h1>CSS3 Image Effects Gallery</h1>
+       
+        <!-- Project 1: Basic Filter Effect -->
+        <div class="project">
+            <h2>Project 1: Grayscale & Contrast</h2>
+            <img src="image1.jpg" alt="Project 1" class="effect-1">
+        </div>
 
-        <main>
-            <section class="gallery">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/butterfly.jpg" alt="Butterfly">
-                    </div>
-                    <div class="project-info">
-                        <h2>Butterfly</h2>
-                        <p>Beautiful butterfly image with CSS3 effects and transformations.</p>
-                    </div>
-                </div>
+        <!-- Project 2: Shadow Effect -->
+        <div class="project">
+            <h2>Project 2: Drop Shadow</h2>
+            <img src="image2.jpg" alt="Project 2" class="effect-2">
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/penguins.jpg" alt="Penguins">
-                    </div>
-                    <div class="project-info">
-                        <h2>Penguins</h2>
-                        <p>Charming penguins showcasing creative CSS3 image manipulations.</p>
-                    </div>
-                </div>
+        <!-- Project 3: Blur & Brightness -->
+        <div class="project">
+            <h2>Project 3: Blur & Brightness</h2>
+            <img src="image3.jpg" alt="Project 3" class="effect-3">
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/seagull.png" alt="Seagull">
-                    </div>
-                    <div class="project-info">
-                        <h2>Seagull</h2>
-                        <p>Stunning seagull image with amazing visual CSS3 effects.</p>
-                    </div>
-                </div>
+        <!-- Project 4: Sepia & Saturation -->
+        <div class="project">
+            <h2>Project 4: Sepia Tone</h2>
+            <img src="image4.jpg" alt="Project 4" class="effect-4">
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/theater_stage.jpg" alt="Theater Stage">
-                    </div>
-                    <div class="project-info">
-                        <h2>Theater Stage</h2>
-                        <p>Dramatic theater stage image with CSS3 transformations.</p>
-                    </div>
-                </div>
+        <!-- Project 5: Gradient Overlay -->
+        <div class="project">
+            <h2>Project 5: Gradient Overlay</h2>
+            <div class="gradient-container">
+                <img src="image5.jpg" alt="Project 5" class="effect-5">
+            </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/football_field.jpg" alt="Football Field">
-                    </div>
-                    <div class="project-info">
-                        <h2>Football Field</h2>
-                        <p>Dynamic football field with CSS3 border styling.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/dinosaur.png" alt="Dinosaur">
-                    </div>
-                    <div class="project-info">
-                        <h2>Dinosaur</h2>
-                        <p>Prehistoric dinosaur image with creative CSS3 effects.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 CSS3 Image Projects. Created with ❤️</p>
-        </footer>
+        <!-- Project 6: Border Image (Tic-Tac-Toe Frame) -->
+        <div class="project">
+            <h2>Project 6: Border Image Frame</h2>
+            <div class="border-frame">
+                <img src="image6.jpg" alt="Project 6" class="effect-6">
+            </div>
+        </div>
     </div>
 </body>
 </html>
