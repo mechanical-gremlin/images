@@ -46,7 +46,7 @@ h1 {
 }
 
 .effect-2 {
-   filter: hue-rotate(-180deg);
+   filter: hue-rotate(270deg);
 }
 
 .effect-3 {
